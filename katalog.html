@@ -15,11 +15,11 @@
 <body>
     <header class="fixed w-full z-40 top-0 w-full h-screen transition-transform translate-x-0">
         <div class="container mx-auto pb-2 bg-white">
-            <div class="flex flex-wrap items-center justify-between">
+            <div class="flex flex-wrap items-center justify-between ">
                 <div>
                     <a href="index.html" class="text-lg font-['Inter'] bg-white font-medium text-[#0D0D0D]">EXPLOREL.CLO</a>
                 </div>
-                <div>
+                <div class="">
                     <nav class="flex flex-wrap items-center justify-end">
                         <ul class="flex flex-wrap items-center">
                             <li class="mr-2">
@@ -75,50 +75,144 @@
 
     <main>
         <section>
+            <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open sidebar</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                </svg>
+            </button>
             
-<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-    <span class="sr-only">Open sidebar</span>
-    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-    </svg>
- </button>
- 
- <aside id="default-sidebar" class="fixed top-[10%] left-0 z-25 w-[277px] h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full pt-[20%] bg-[#F1F1F1]  ">
-       <ul class=" ml-6 mx-auto">
-          <li>
-             <a href="#" class="flex items-center font-['Inter'] font-medium text-[32px] text-black leading-0 hover:bg-white">
-                <span class="ml-3 mb-[50px] mt-[50px]">All Product’s</span>
-             </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-black rounded-lg hover:bg-white ">
-                <span class="ml-3 mb-[15px]">T-Shirts</span>
-             </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
-                <span class="ml-3 mb-[15px]">Outer</span>
-            </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
-                <span class="ml-3 mb-[15px]">Pants</span>
-            </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
-                <span class="ml-3 mb-[15px]">Shirts</span>
-             </a>
-          </li>
-       </ul>
-    </div>
- </aside>
- 
- 
- 
+            <aside id="default-sidebar" class="fixed top-[10%] left-0 z-25 w-[277px] h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+                <div class="h-full pt-[20%] bg-[#F1F1F1]  ">
+                <ul class=" ml-6 mx-auto">
+                    <li>
+                        <a href="#" class="flex items-center font-['Inter'] font-medium text-[32px] text-black leading-0 hover:bg-white">
+                            <span class="ml-3 mb-[50px] mt-[50px]">All Product’s</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-black rounded-lg hover:bg-white ">
+                            <span class="ml-3 mb-[15px]">T-Shirts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
+                            <span class="ml-3 mb-[15px]">Outer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
+                            <span class="ml-3 mb-[15px]">Pants</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center font-['Inter'] font-regular text-[20px] text-gray-900 rounded-lg hover:bg-white ">
+                            <span class="ml-3 mb-[15px]">Shirts</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </aside>
         </section>
 
+        <section>
+            <div class="container mx-auto">
+                <div class="ml-[277px] mt-[14%] flex flex-wrap justify-between">
+                    
+                    <div class="max-w-xs mb-[15px] mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="max-w-xs mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="max-w-xs mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="max-w-xs mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="max-w-xs mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="max-w-xs mb-[15px] bg-white border border-gray-200 drop-shadow-md">
+                        <a href="#">
+                            <img class="w-[344.65px] h-[389px]" src="asset/3.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 font-[Inter] font-regular text-[16px] text-black ">Explorer Out Cast T-Shirt</h5>
+                            </a>
+                            <p class="mb-3 font-regular text-[14px] text-[#727171] ">Men’s T-Shirt</p>
+                            <a href="#">
+                                <h5 class="font-[Inter] font-regular text-[16px] text-black ">Rp 59.000</h5>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+        </section>
         
     </main>
 
